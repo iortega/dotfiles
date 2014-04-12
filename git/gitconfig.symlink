@@ -26,3 +26,5 @@
 [user]
 	email = ignacio.ortega@gmail.com
 	name = Ignacio Ortega
+[credential]
+	helper = osxkeychain
