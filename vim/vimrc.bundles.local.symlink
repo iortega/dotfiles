@@ -1,0 +1,39 @@
+" set rtp+=~/.vim/bundle/vundle/
+" call vundle#rc()
+
+" Bundle 'gmarik/vundle'
+" Bundle 'kien/ctrlp.vim'
+" Bundle 'ervandew/supertab'
+" Bundle 'Lokaltog/powerline'
+Bundle 'bling/vim-airline'
+" Bundle 'esukram/autocomplpop.vim'
+Bundle 'vim-scripts/AutoComplPop'
+" Bundle 'Valloric/YouCompleteMe'
+" Bundle 'scrooloose/syntastic'
+Bundle 'msanders/snipmate.vim'
+Bundle 'scrooloose/snipmate-snippets'
+Bundle 'Raimondi/delimitMate'
+" Bundle 'tomtom/tcomment_vim'
+" Bundle 'nelstrom/vim-markdown-preview'
+Bundle 'greyblake/vim-preview'
+Bundle 'wycats/nerdtree'
+
+" Git
+" Bundle 'tpope/vim-fugitive'
+" Bundle 'airblade/vim-gitgutter'
+
+" Rails
+" Bundle 'tpope/vim-rails'
+Bundle 'slim-template/vim-slim'
+" Bundle 'kchmck/vim-coffee-script'
+
+" Python
+" Bundle 'jmcantrell/vim-virtualenv'
+
+" Bundle 'chrisbra/csv.vim'
+" Bundle 'Floobits/floobits-vim'
+
+" Bundle 'vim-scripts/rubycomplete.vim'
+" Bundle 'vim-scripts/ctags.vim'
+Bundle 'vim-scripts/taglist.vim'
+" Bundle 'skalnik/vim-vroom'

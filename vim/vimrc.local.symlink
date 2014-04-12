@@ -1,0 +1,101 @@
+scriptencoding utf-8
+set encoding=utf-8
+
+set nocompatible
+filetype off
+
+filetype plugin indent on
+
+let mapleader = ","
+
+" Shortcut to rapidly toggle `set list`
+nmap <leader>l :set list!<CR>
+
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬
+
+"Invisible character colors
+highlight NonText guifg=#4a4a59
+highlight SpecialKey guifg=#4a4a59
+
+set ts=2 sts=2 sw=2 expandtab
+set number
+syntax on
+
+function! Preserve(command)
+  " Preparation: save last search, and cursor position.
+  let _s=@/
+  let l = line(".")
+  let c = col(".")
+  " Do the business:
+  execute a:command
+  " Clean up: restore previous search history, and cursor position
+  let @/=_s
+  call cursor(l, c)
+endfunction
+nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
+nmap _= :call Preserve("normal gg=G")<CR>
+
+if has("autocmd")
+  " Automatically update .vimrc
+  autocmd bufwritepost .vimrc source $MYVIMRC
+
+  " Delete trailing whitespaces writing files
+  autocmd BufWritePre *.py,*.js,*.rb,*.css,*.sass,*.scss,*.coffee,*.slim,*.haml,*.eco,*.local :call Preserve("%s/\\s\\+$//e")
+
+  " Enable filetype detection
+  filetype plugin indent on
+
+  " Restore cursor position
+  autocmd BufReadPost *
+    \ if line("'\"") > 1 && line("'\"") <= line("$") |
+    \   exe "normal! g`\"" |
+    \ endif
+  au BufNewFile,BufRead *.prawn,Gemfile,Guardfile set filetype=ruby
+
+  autocmd BufNewFile,BufRead *.html.erb,*.jst.eco set filetype=html.eruby
+endif
+
+" Edit command shortcuts
+map <leader>ew :e <C-R>=expand("%:p:h") . "/" <CR>
+map <leader>es :sp <C-R>=expand("%:p:h") . "/" <CR>
+map <leader>ev :vsp <C-R>=expand("%:p:h") . "/" <CR>
+map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
+
+set t_Co=256
+colorscheme railscasts
+set shell=/bin/zsh
+set backspace=2
+
+" CoffeScript
+let coffee_compile_vert = 1
+
+" Xiki
+" let $XIKI_DIR = "/Users/iortega/.rbenv/versions/1.9.3-p194-perf/lib/ruby/gems/1.9.1/gems/xiki-0.6.3"
+" source /Users/iortega/.rbenv/versions/1.9.3-p194-perf/lib/ruby/gems/1.9.1/gems/xiki-0.6.3/etc/vim/xiki.vim
+
+command! -bar -range=% NotRocket :<line1>,<line2>s/:\(\w\+\)\s*=>/\1:/ge
+
+filetype plugin on
+set ofu=syntaxcomplete#Complete
+
+" T-comment
+map <leader>c <c-_><c-_>
+
+" CtrlP
+let g:ctrlp_max_files=20000
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+let g:ctrlp_custom_ignore='\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_show_hidden = 1
+
+nnoremap <silent> <Leader>t :CtrlP<cr>
+nnoremap <silent> <leader>T :ClearCtrlPCache<cr>\|:CtrlP<cr>
+
+" powerline
+set guifont=Source\ Code\ Pro\ for\ Powerline:h14
+let g:Powerline_symbols = 'fancy'
+set laststatus=2
+
+let g:airline_theme='bubblegum'
+
+" let $PATH="/usr/local/bin:$PATH"
