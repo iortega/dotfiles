@@ -49,6 +49,9 @@ install webkit2png 2> /dev/null
 install zopfli 2> /dev/null
 install p7zip 2> /dev/null
 
+# Android SDK
+install android-sdk 2> /dev/null
+
 # install homebrew/versions/lua52
 
 # Remove outdated versions from the cellar

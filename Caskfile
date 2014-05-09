@@ -1,8 +1,8 @@
 # Install native apps
 # Usage: `brew bundle Caskfile`
 
-install phinze/cask/brew-cask
-tap caskroom/versions
+tap caskroom/cask
+install brew-cask
 
 cask install appcleaner 2> /dev/null
 cask install dropbox 2> /dev/null
