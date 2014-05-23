@@ -34,6 +34,7 @@ install wget --enable-iri 2> /dev/null
 #install homebrew/dupes/screen
 
 # Install other useful binaries
+install direnv 2> /dev/null
 install ack 2> /dev/null
 install pv 2> /dev/null
 #install exiv2
