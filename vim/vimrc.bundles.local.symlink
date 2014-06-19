@@ -37,3 +37,6 @@ Bundle 'slim-template/vim-slim'
 " Bundle 'vim-scripts/ctags.vim'
 Bundle 'vim-scripts/taglist.vim'
 " Bundle 'skalnik/vim-vroom'
+Bundle 'godlygeek/tabular'
+
+Bundle 't9md/vim-ruby-xmpfilter'
