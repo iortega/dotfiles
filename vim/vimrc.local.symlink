@@ -64,7 +64,7 @@ map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
 set t_Co=256
 colorscheme railscasts
-set shell=/bin/zsh
+set shell=/bin/bash
 set backspace=2
 
 " CoffeScript
@@ -127,3 +127,48 @@ imap <buffer> <Leader>r <Plug>(xmpfilter-run)
 nmap <buffer> <Leader>m <Plug>(xmpfilter-mark)
 xmap <buffer> <Leader>m <Plug>(xmpfilter-mark)
 imap <buffer> <Leader>m <Plug>(xmpfilter-mark)
+
+
+nmap <leader>ne :NERDTreeToggle<cr>
+
+function! SassRailsPreview()
+  let current_file = expand('%:p')
+  echom current_file
+  let @c = system("rails r 'puts Rails.application.assets.find_asset(\"" . current_file . "\").to_s'")
+  if bufexists("__SASS_RAILS_PREVIEW__")
+    bdelete __SASS_RAILS_PREVIEW__
+  endif
+  vsplit __SASS_RAILS_PREVIEW__
+  normal! ggdG
+  setlocal filetype=css
+  setlocal buftype=nofile
+  silent put=@c
+  set nomodified
+endfunction
+command! -nargs=0 -complete=command SassRailsPreview call SassRailsPreview()
+
+" Abbreviations
+:iabbrev ssig -- <cr>Ignacio Ortega<cr>ignacio.ortega@gmail.com
+:iabbrev @@ ignacio.ortega@gmail.com
+:iabbrev ccopy Copyright 2014 Ignacio Ortega, all rights reserved.
+
+" Word in caps
+:nnoremap <c-u> viwU<esc>e
+:inoremap <c-u> <esc>viwU<esc>i
+
+
+" Edit vimrc and source
+:nnoremap <leader>ev :vsplit $MYVIMRC.local<cr>
+:nnoremap <leader>sv :source $MYVIMRC<cr>
+" Copy & Paste line
+:nnoremap <leader>cp ddPp
+" Sourround word by "
+:nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
+" Sourround word by '
+:nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
+" Beginning of line
+:nnoremap H 0
+" End of line
+:nnoremap L $
+
+:inoremap jk <esc>

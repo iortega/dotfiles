@@ -152,3 +152,6 @@ alias reload="exec $SHELL -l"
 
 # Coursera
 alias coursera_update="cd ~/code/coursera; find . ! -path . -type d -maxdepth 1 -not -path '*/\.*' | cut -c3- | xargs ./coursera-dl -u ignacio.ortega@gmail.com -p --clear-cache"
+
+# tmux
+alias tmux="stty stop undef && tmux"

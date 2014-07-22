@@ -35,8 +35,17 @@ Bundle 'slim-template/vim-slim'
 
 " Bundle 'vim-scripts/rubycomplete.vim'
 " Bundle 'vim-scripts/ctags.vim'
+Bundle "vim-scripts/AutoTag"
+Bundle "mortice/exuberant-ctags"
 Bundle 'vim-scripts/taglist.vim'
 " Bundle 'skalnik/vim-vroom'
 Bundle 'godlygeek/tabular'
 
 Bundle 't9md/vim-ruby-xmpfilter'
+
+" vim-turbux
+Bundle "benmills/vimux"
+Bundle "jgdavey/tslime.vim"
+Bundle "tpope/vim-dispatch"
+Bundle "jgdavey/vim-turbux"
+Bundle 'editorconfig/editorconfig-vim'

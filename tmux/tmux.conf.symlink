@@ -79,7 +79,7 @@ set -g status-left-length 40
 
 # set -g status-right "#[fg=green] #h | %d %b %R"
 
-set -g status-access_modulefy centre
+# set -g status-access_modulefy centre
 #setw -g monitor-activity onset -g visual-activity on
 
 # navigate using vim-style keys
@@ -107,3 +107,6 @@ bind Down last-window \; swap-pane -s tmp.1 \; kill-window -t tmp
 bind P pipe-pane -o "cat >>~/#W.log" \; display "Toggled logging to ~/#W.log"
 
 # source ~/.local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf
+
+set-environment -gu RBENV_VERSION
+
