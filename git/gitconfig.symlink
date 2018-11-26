@@ -28,3 +28,5 @@
 	name = Ignacio Ortega
 [credential]
 	helper = osxkeychain
+[grep]
+	lineNumber = true

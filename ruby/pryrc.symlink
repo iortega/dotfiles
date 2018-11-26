@@ -5,12 +5,12 @@ Pry.editor = 'vim'
 Pry.config.history.file = "~/.irb_history"
 
 # Handy hotkeys for debugging!
-if defined?(PryDebugger)
-  Pry.config.commands.alias_command 'c', 'continue'
-  Pry.config.commands.alias_command 's', 'step'
-  Pry.config.commands.alias_command 'n', 'next'
-  Pry.config.commands.alias_command 'f', 'finish'
-end
+# if defined?(PryDebugger)
+#   Pry.config.commands.alias_command 'c', 'continue'
+#   Pry.config.commands.alias_command 's', 'step'
+#   Pry.config.commands.alias_command 'n', 'next'
+#   Pry.config.commands.alias_command 'f', 'finish'
+# end
 
 # === CUSTOM PROMPT ===
 Pry.config.prompt = proc do |obj, level, _|
@@ -109,3 +109,11 @@ class Hash
     Hash[Array.toy(n).zip(Array.toy(n){|c| (96+(c+1)).chr})]
   end
 end
+
+if defined?(PryByebug)
+  Pry.commands.alias_command 'c', 'continue'
+  Pry.commands.alias_command 's', 'step'
+  Pry.commands.alias_command 'n', 'next'
+  Pry.commands.alias_command 'f', 'finish'
+end
+

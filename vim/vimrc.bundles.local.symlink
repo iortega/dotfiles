@@ -6,6 +6,7 @@
 " Bundle 'ervandew/supertab'
 " Bundle 'Lokaltog/powerline'
 Bundle 'bling/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
 " Bundle 'esukram/autocomplpop.vim'
 Bundle 'vim-scripts/AutoComplPop'
 " Bundle 'Valloric/YouCompleteMe'
@@ -49,3 +50,8 @@ Bundle "jgdavey/tslime.vim"
 Bundle "tpope/vim-dispatch"
 Bundle "jgdavey/vim-turbux"
 Bundle 'editorconfig/editorconfig-vim'
+Bundle 'Yggdroot/indentLine'
+
+Bundle 'ekalinin/Dockerfile.vim'
+
+Bundle 'leroyg/vim-flay'

@@ -7,6 +7,7 @@ VOLUME_ROOT="/Volumes/IO DOCS"
 if [[ -d $VOLUME_ROOT ]]; then
   rsync --recursive --ignore-existing --exclude "Adobe*" $HOME/Documents "$VOLUME_ROOT"
   rsync --recursive --ignore-existing $HOME/Music "$VOLUME_ROOT"
+  rsync --recursive --ignore-existing $HOME/Movies "$VOLUME_ROOT"
   rsync --recursive --ignore-existing $HOME/Pictures "$VOLUME_ROOT"
   rsync --recursive --ignore-existing $HOME/Books "$VOLUME_ROOT"
   rsync --recursive --ignore-existing $HOME/coursera "$VOLUME_ROOT"
