@@ -2,10 +2,10 @@
 set -e
 
 echo "  Installing nodenv"
-brew install nodenv 2> /dev/null
-brew install nodenv/nodenv/nodenv-default-packages 2> /dev/null
+brew install nodenv
 
-cp nodenv/default-packages $HOME/.nodenv/default-packages
+# brew install nodenv/nodenv/nodenv-default-packages
+# cp nodenv/default-packages $(nodenv root)/default-packages
 
 if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 

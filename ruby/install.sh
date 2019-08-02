@@ -5,7 +5,7 @@ echo "  Installing rbenv"
 brew install rbenv ruby-build 2> /dev/null
 
 echo "    Installing rbenv plugins"
-brew install rbenv-readline rbenv-aliases rbenv-bundler rbenv-gem-rehash rbenv-default-gems 2> /dev/null
+brew install rbenv-aliases rbenv-bundler rbenv-default-gems
 
 cp ruby/default-gems $HOME/.rbenv/default-gems
 
