@@ -1,8 +1,7 @@
-
-" Plugin 'esukram/autocomplpop.vim'
 Plugin 'vim-scripts/AutoComplPop'
 Plugin 'msanders/snipmate.vim'
 Plugin 'scrooloose/snipmate-snippets'
+" Plugin 'esukram/autocomplpop.vim'
 " Plugin 'Raimondi/delimitMate'
 " Plugin 'tomtom/tcomment_vim'
 " Plugin 'nelstrom/vim-markdown-preview'
@@ -10,12 +9,14 @@ Plugin 'scrooloose/snipmate-snippets'
 " Plugin 'wycats/nerdtree'
 
 " Git
+
 " Plugin 'tpope/vim-fugitive'
 " Plugin 'airblade/vim-gitgutter'
 
 " Ruby / Rails
-" Plugin 'tpope/vim-rails'
+
 Plugin 'slim-template/vim-slim'
+" Plugin 'tpope/vim-rails'
 " Plugin 'kchmck/vim-coffee-script'
 " Plugin 'thoughtbot/vim-rspec'
 " Plugin 'tpope/vim-rails'
@@ -24,29 +25,23 @@ Plugin 'slim-template/vim-slim'
 " Plugin 'tpope/vim-cucumber'
 
 " Python
-" Plugin 'jmcantrell/vim-virtualenv'
 
+Plugin 't9md/vim-ruby-xmpfilter'
+Plugin 'tpope/vim-dispatch'
+Plugin 'jgdavey/vim-turbux'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'Yggdroot/indentLine'
+" Plugin 'jmcantrell/vim-virtualenv'
 " Plugin 'chrisbra/csv.vim'
 " Plugin 'Floobits/floobits-vim'
-
 " Plugin 'vim-scripts/rubycomplete.vim'
 " Plugin 'vim-scripts/ctags.vim'
-" Plugin "vim-scripts/AutoTag"
-" Plugin "mortice/exuberant-ctags"
+" Plugin 'vim-scripts/AutoTag'
+" Plugin 'mortice/exuberant-ctags'
 " Plugin 'vim-scripts/taglist.vim'
 " Plugin 'skalnik/vim-vroom'
 " Plugin 'godlygeek/tabular'
-
-Plugin 't9md/vim-ruby-xmpfilter'
-
-" vim-turbux
-" Plugin "benmills/vimux"
-" Plugin "jgdavey/tslime.vim"
-Plugin "tpope/vim-dispatch"
-Plugin "jgdavey/vim-turbux"
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'Yggdroot/indentLine'
-
+" Plugin 'benmills/vimux'
+" Plugin 'jgdavey/tslime.vim'
 " Plugin 'ekalinin/Dockerfile.vim'
-
 " Plugin 'leroyg/vim-flay'

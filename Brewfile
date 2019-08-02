@@ -2,9 +2,13 @@ cask_args appdir: "/Applications"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "telemachus/brew", "https://telemachus@bitbucket.org/telemachus/brew.git", pin: true
+tap "heroku/brew"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
 
+cask "font-fira-code"
 brew "bash"
-brew "wget", args: ["enable-iri"]
+brew "wget"
 brew "imagemagick@6"
 brew "direnv"
 brew "git"
@@ -17,6 +21,7 @@ brew "sqlite"
 brew "tig"
 brew "readline"
 brew "heroku"
+cask "adoptopenjdk8"
 brew "elasticsearch"
 brew "direnv"
 
