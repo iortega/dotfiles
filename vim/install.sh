@@ -2,7 +2,7 @@
 set -e
 
 if [ ! -d "$HOME/.vim/bundle/vundle" ]; then
-  git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 
 if [[ ! -d "$HOME/.vim/colors" ]]; then

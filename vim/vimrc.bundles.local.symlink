@@ -1,57 +1,52 @@
-" set rtp+=~/.vim/bundle/vundle/
-" call vundle#rc()
 
-" Bundle 'gmarik/vundle'
-" Bundle 'kien/ctrlp.vim'
-" Bundle 'ervandew/supertab'
-" Bundle 'Lokaltog/powerline'
-Bundle 'bling/vim-airline'
-Bundle 'vim-airline/vim-airline-themes'
-" Bundle 'esukram/autocomplpop.vim'
-Bundle 'vim-scripts/AutoComplPop'
-" Bundle 'Valloric/YouCompleteMe'
-" Bundle 'scrooloose/syntastic'
-Bundle 'msanders/snipmate.vim'
-Bundle 'scrooloose/snipmate-snippets'
-Bundle 'Raimondi/delimitMate'
-" Bundle 'tomtom/tcomment_vim'
-" Bundle 'nelstrom/vim-markdown-preview'
-Bundle 'greyblake/vim-preview'
-Bundle 'wycats/nerdtree'
+" Plugin 'esukram/autocomplpop.vim'
+Plugin 'vim-scripts/AutoComplPop'
+Plugin 'msanders/snipmate.vim'
+Plugin 'scrooloose/snipmate-snippets'
+" Plugin 'Raimondi/delimitMate'
+" Plugin 'tomtom/tcomment_vim'
+" Plugin 'nelstrom/vim-markdown-preview'
+" Plugin 'greyblake/vim-preview'
+" Plugin 'wycats/nerdtree'
 
 " Git
-" Bundle 'tpope/vim-fugitive'
-" Bundle 'airblade/vim-gitgutter'
+" Plugin 'tpope/vim-fugitive'
+" Plugin 'airblade/vim-gitgutter'
 
-" Rails
-" Bundle 'tpope/vim-rails'
-Bundle 'slim-template/vim-slim'
-" Bundle 'kchmck/vim-coffee-script'
+" Ruby / Rails
+" Plugin 'tpope/vim-rails'
+Plugin 'slim-template/vim-slim'
+" Plugin 'kchmck/vim-coffee-script'
+" Plugin 'thoughtbot/vim-rspec'
+" Plugin 'tpope/vim-rails'
+" Plugin 'kchmck/vim-coffee-script'
+" Plugin 'tpope/vim-bundler'
+" Plugin 'tpope/vim-cucumber'
 
 " Python
-" Bundle 'jmcantrell/vim-virtualenv'
+" Plugin 'jmcantrell/vim-virtualenv'
 
-" Bundle 'chrisbra/csv.vim'
-" Bundle 'Floobits/floobits-vim'
+" Plugin 'chrisbra/csv.vim'
+" Plugin 'Floobits/floobits-vim'
 
-" Bundle 'vim-scripts/rubycomplete.vim'
-" Bundle 'vim-scripts/ctags.vim'
-Bundle "vim-scripts/AutoTag"
-Bundle "mortice/exuberant-ctags"
-Bundle 'vim-scripts/taglist.vim'
-" Bundle 'skalnik/vim-vroom'
-Bundle 'godlygeek/tabular'
+" Plugin 'vim-scripts/rubycomplete.vim'
+" Plugin 'vim-scripts/ctags.vim'
+" Plugin "vim-scripts/AutoTag"
+" Plugin "mortice/exuberant-ctags"
+" Plugin 'vim-scripts/taglist.vim'
+" Plugin 'skalnik/vim-vroom'
+" Plugin 'godlygeek/tabular'
 
-Bundle 't9md/vim-ruby-xmpfilter'
+Plugin 't9md/vim-ruby-xmpfilter'
 
 " vim-turbux
-Bundle "benmills/vimux"
-Bundle "jgdavey/tslime.vim"
-Bundle "tpope/vim-dispatch"
-Bundle "jgdavey/vim-turbux"
-Bundle 'editorconfig/editorconfig-vim'
-Bundle 'Yggdroot/indentLine'
+" Plugin "benmills/vimux"
+" Plugin "jgdavey/tslime.vim"
+Plugin "tpope/vim-dispatch"
+Plugin "jgdavey/vim-turbux"
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'Yggdroot/indentLine'
 
-Bundle 'ekalinin/Dockerfile.vim'
+" Plugin 'ekalinin/Dockerfile.vim'
 
-Bundle 'leroyg/vim-flay'
+" Plugin 'leroyg/vim-flay'

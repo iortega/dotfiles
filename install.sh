@@ -105,11 +105,7 @@ install_dotfiles
 
 # Bundle Brewfile
 echo "  Installing Brewfile"
-brew bundle Brewfile
-
-# Bundle Caskfile
-echo "  Installing Caskfile"
-brew bundle Caskfile
+brew bundle
 
 # Install all install.sh. rbenv, pyenv, nodenv
 find . -mindepth 2 -name install.sh | while read installer ; do sh -c "${installer}" ; done
