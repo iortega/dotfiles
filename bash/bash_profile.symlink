@@ -73,6 +73,8 @@ if type brew 2&>/dev/null; then
   done
 fi
 
+[ -e /usr/local/opt/imagemagick@6/bin ] && export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
+
 # util
 mkcd() {
   mkdir -p -- "$1" && cd -P -- "$1"
