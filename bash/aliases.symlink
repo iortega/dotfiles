@@ -6,6 +6,12 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+# List files
+alias ll='ls -al'
+alias la='ls -A'
+alias l='ls -CF'
+alias lst='ls -lt'
+
 # Shortcuts
 alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"

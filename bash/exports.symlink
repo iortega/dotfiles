@@ -12,6 +12,9 @@ export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 
+# Add `~/bin` to the `$PATH`
+export PATH="$HOME/.bin:$HOME/bin:$PATH"
+
 # Highlight section titles in manual pages
 export LESS_TERMCAP_md="$ORANGE"
 
@@ -21,11 +24,23 @@ export MANPAGER="less -X"
 # Always enable colored `grep` output
 export GREP_OPTIONS="--color=auto"
 
+# Homebrew
+export PATH="$(brew --prefix)/bin:$(brew --prefix)/sbin:$PATH"
+
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+[ -d $(brew --prefix heroku) ] && export PATH="$(brew --prefix heroku)/bin:$PATH"
 
 # Android sdk
 export ANDROID_HOME=/usr/local/opt/android-sdk
+
+# Imagemagick
+[ -d $(brew --prefix imagemagick@6) ] && export PATH="$(brew --prefix imagemagick@6)/bin:$PATH"
+
+# vim
+export PATH="$(brew --prefix vim)/bin:$PATH"
+
+# qt for capybara-webkit
+[ -d $(brew --prefix qt) ] && export PATH="$(brew --prefix qt)/bin:$PATH"

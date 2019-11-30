@@ -17,10 +17,9 @@ Plugin 'scrooloose/snipmate-snippets'
 
 Plugin 'slim-template/vim-slim'
 " Plugin 'tpope/vim-rails'
-" Plugin 'kchmck/vim-coffee-script'
+Plugin 'kchmck/vim-coffee-script'
 " Plugin 'thoughtbot/vim-rspec'
 " Plugin 'tpope/vim-rails'
-" Plugin 'kchmck/vim-coffee-script'
 " Plugin 'tpope/vim-bundler'
 " Plugin 'tpope/vim-cucumber'
 
